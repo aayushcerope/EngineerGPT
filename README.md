@@ -4,11 +4,12 @@ Full-stack chatbot platform for engineering students (CSE, ECE, EE, Mechanical, 
 
 ## Stack
 - Frontend: React + Tailwind + Markdown/KaTeX + PWA service worker
-- Backend: Node.js + Express + MongoDB + JWT auth + role-based admin routes
+<!-- - Backend: Node.js + Express + MongoDB + JWT auth + role-based admin routes -->
 - AI: Gemini API key integration point via `GEMINI_API_KEY`
 
 ## Run
 
+<!--
 ### Backend
 ```bash
 cd backend
@@ -23,6 +24,7 @@ MONGO_URI=mongodb://127.0.0.1:27017/engineering_chatbot
 JWT_SECRET=super_secret
 GEMINI_API_KEY=your_gemini_key
 ```
+-->
 
 ### Frontend
 ```bash
@@ -33,6 +35,8 @@ npm run dev
 
 Set optional `.env` in frontend:
 ```env
+VITE_GEMINI_API_KEY=your_gemini_key
+# Optional fallback if backend routes are still used:
 VITE_API_URL=http://localhost:5000/api
 ```
 
